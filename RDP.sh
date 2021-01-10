@@ -22,10 +22,10 @@ sudo adduser wh chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
-printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
-read -p "Paste Here: " CRP
+printf '\nCheck https://remotedesktop.google.com/headless  Copy command of Debian Linux and paste below\n'
+read -p "command: " CRP
 su - wh -c """$CRP"""
-printf 'Check https://remotedesktop.google.com/access/ \n\n'
+printf 'Done https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
 then
     printf "\n\nUpgrade Completed " >&2
